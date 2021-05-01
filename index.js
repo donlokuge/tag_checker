@@ -1,5 +1,10 @@
 
 "use strict";
+/**
+ * check validity of Markup language
+ * @param {string} text - Text string
+ * @returns {string}
+ */
 function isValid(text) {
     if (!text) {
         return "Text required"
