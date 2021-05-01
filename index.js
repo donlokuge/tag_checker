@@ -1,4 +1,5 @@
 
+"use strict";
 function isValid(text) {
     if (!text) {
         return "Text required"
@@ -11,7 +12,7 @@ function isValid(text) {
     let errors = [];
 
     for (let i = 0; i < length; ++i) {
-        
+
         if (text[i] === "<") {
             if (isStartTag(text, i)) {
                 tag = text.substr(i, 3);
